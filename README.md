@@ -8,12 +8,12 @@ Este proyecto recrea la mecánica principal de Katamari Damacy: se controla una 
 Los objetos recolectados quedan adheridos a la esfera, creando un efecto visual similar al juego original.
 
 ## Requisitos
-python >= 3.8
-pyglet
-numpy
-trimesh
-pillow
-OpenGL
+- python >= 3.8
+- pyglet
+- numpy
+- trimesh
+- pillow
+- OpenGL
 
 ## Características
 
@@ -31,16 +31,16 @@ OpenGL
 ## Controles
 Movimiento de la Esfera
 
-**W** - Mover hacia adelante
-**S** - Mover hacia atrás
-**A** - Mover hacia la izquierda
-**D** - Mover hacia la derecha
+- **W** - Mover hacia adelante
+- **S** - Mover hacia atrás
+- **A** - Mover hacia la izquierda
+- **D** - Mover hacia la derecha
 
 ## Cámaras
 
-1 - Vista aérea (cenital)
-2 - Primera persona (Movimiento del mouse - Rotar la cámara (yaw y pitch))
-3 - Tercera persona
+1. Vista aérea (cenital)
+2. Primera persona (Movimiento del mouse - Rotar la cámara (yaw y pitch))
+3. Tercera persona
 
 
 ## Instalación
@@ -64,10 +64,10 @@ bashpython Tarea_3.py
 ## Objetos Recolectables
 El juego incluye 9 objetos coleccionables distribuidos por el campo:
 
-**2x Cinnamoroll** (Personaje)
-**2x Corazones**
-**2x Togepi** (Pokémon)
-**3x Fresas**
+- **2x Cinnamoroll** (Personaje)
+- **2x Corazones**
+- **2x Togepi** (Pokémon)
+- **3x Fresas**
 
 Cada objeto tiene su posición única en el mundo y puede ser recolectado al hacer contacto con la esfera.
 
@@ -75,16 +75,16 @@ Cada objeto tiene su posición única en el mundo y puede ser recolectado al hac
 ## Grafo de Escena
 Utiliza un sistema de grafo de escena para manejar las jerarquías de objetos:
 
-Los objetos recolectados se anclan como hijos de la esfera
-Las transformaciones se propagan jerárquicamente
-Miku (personaje principal) está anclado permanentemente a la esfera
+- Los objetos recolectados se anclan como hijos de la esfera
+- Las transformaciones se propagan jerárquicamente
+- Miku (personaje principal) está anclado permanentemente a la esfera
 
 ## Mecánicas del Juego
 
-**Inicio**: La esfera comienza en el centro del campo con un personaje haciendo el gesto de empujar
-**Exploración**: Mueve la esfera con WASD para buscar objetos
-**Recolección**: Al tocar un objeto, este se "pega" a la esfera
-**Crecimiento**: Los objetos recolectados orbitan alrededor de la esfera
-**Cámara**: Cambia entre vistas para mejor control y visualización
+1. **Inicio**: La esfera comienza en el centro del campo con un personaje haciendo el gesto de empujar
+2. **Exploración**: Mueve la esfera con WASD para buscar objetos
+3. **Recolección**: Al tocar un objeto, este se "pega" a la esfera
+4. **Crecimiento**: Los objetos recolectados orbitan alrededor de la esfera
+5. **Cámara**: Cambia entre vistas para mejor control y visualización
 
 
